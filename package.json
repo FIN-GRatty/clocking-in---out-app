@@ -1,0 +1,32 @@
+{
+  "name": "clocking-out",
+  "version": "1.0.0",
+  "description": "Employee clock-in/out application with React frontend and Express backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "test": "node test-app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0",
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": ["employee", "clock", "time", "tracking", "react", "express"],
+  "author": "Your Name",
+  "license": "MIT"
+}
