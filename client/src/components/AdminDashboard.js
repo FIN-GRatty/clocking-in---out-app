@@ -17,7 +17,7 @@ const AdminDashboard = () => {
 
   const fetchOverview = async () => {
     try {
-      const response = await fetch('/api/admin/overview');
+      const response = await fetch('https://clocking-out-backend.onrender.com/api/admin/overview');
       if (response.ok) {
         const data = await response.json();
         setOverview(data);
@@ -43,7 +43,7 @@ const AdminDashboard = () => {
     setMessage('');
 
     try {
-      const response = await fetch('/api/employee/create', {
+      const response = await fetch('https://clocking-out-backend.onrender.com/api/employee/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ const AdminDashboard = () => {
     setMessage('');
 
     try {
-      const response = await fetch('/api/admin/reset', {
+      const response = await fetch('https://clocking-out-backend.onrender.com/api/admin/reset', {
         method: 'POST',
       });
 

@@ -19,7 +19,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch(`/api/employee/${employeeId.trim()}/status`);
+      const response = await fetch(`https://clocking-out-backend.onrender.com/api/employee/${employeeId.trim()}/status`);
       
       if (!response.ok) {
         if (response.status === 404) {

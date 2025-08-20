@@ -16,7 +16,7 @@ const EmployeeDashboard = () => {
 
   const fetchStatus = async () => {
     try {
-      const response = await fetch(`/api/employee/${currentEmployee.id}/status`);
+      const response = await fetch(`https://clocking-out-backend.onrender.com/api/employee/${currentEmployee.id}/status`);
       if (response.ok) {
         const data = await response.json();
         setStatus(data.status);
@@ -28,7 +28,7 @@ const EmployeeDashboard = () => {
 
   const fetchTimeHistory = async () => {
     try {
-      const response = await fetch(`/api/employee/${currentEmployee.id}/history`);
+      const response = await fetch(`https://clocking-out-backend.onrender.com/api/employee/${currentEmployee.id}/history`);
       if (response.ok) {
         const data = await response.json();
         setTimeHistory(data);
@@ -48,16 +48,16 @@ const EmployeeDashboard = () => {
 
       switch (action) {
         case 'clockin':
-          endpoint = '/api/time/clockin';
+          endpoint = 'https://clocking-out-backend.onrender.com/api/time/clockin';
           break;
         case 'clockout':
-          endpoint = '/api/time/clockout';
+          endpoint = 'https://clocking-out-backend.onrender.com/api/time/clockout';
           break;
         case 'lunchStart':
-          endpoint = '/api/time/lunch/start';
+          endpoint = 'https://clocking-out-backend.onrender.com/api/time/lunch/start';
           break;
         case 'lunchEnd':
-          endpoint = '/api/time/lunch/end';
+          endpoint = 'https://clocking-out-backend.onrender.com/api/time/lunch/end';
           break;
         default:
           return;
