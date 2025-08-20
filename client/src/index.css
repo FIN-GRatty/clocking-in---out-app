@@ -230,3 +230,33 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Small button variant */
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* Clickable stat styling */
+.clickable-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Modal styling */
+.modal-overlay {
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Additional utility classes */
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
