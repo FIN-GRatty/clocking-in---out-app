@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/clocking-in---out-app/static/css/main.71260f6d.css",
-    "main.js": "/clocking-in---out-app/static/js/main.a0fff757.js",
+    "main.css": "/clocking-in---out-app/static/css/main.afb98440.css",
+    "main.js": "/clocking-in---out-app/static/js/main.810a9d9f.js",
     "index.html": "/clocking-in---out-app/index.html",
-    "main.71260f6d.css.map": "/clocking-in---out-app/static/css/main.71260f6d.css.map",
-    "main.a0fff757.js.map": "/clocking-in---out-app/static/js/main.a0fff757.js.map"
+    "main.afb98440.css.map": "/clocking-in---out-app/static/css/main.afb98440.css.map",
+    "main.810a9d9f.js.map": "/clocking-in---out-app/static/js/main.810a9d9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.71260f6d.css",
-    "static/js/main.a0fff757.js"
+    "static/css/main.afb98440.css",
+    "static/js/main.810a9d9f.js"
   ]
 }
